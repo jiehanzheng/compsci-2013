@@ -67,11 +67,6 @@
       </div>
 
       <div id="project_list">
-        <!-- NOTE: you must have the correct number of div.row's.  My JavaScript 
-                   code will not insert new rows!  --Jiehan -->
-
-        <!-- the divs.col's below are in order of submission time.  They will be
-             shuffled while the page is rendered. -->
         <div class="row">
           <div id="brabeeba" class="col col-lg-4">
             <div class="thumbnail">
@@ -194,7 +189,7 @@
     <script src="vendor/bootstrap/js/jquery.js"></script>
     <script>
       /**
-       * Task: read project divs, remove them, and then insert the divs back in
+       * Task: read all project divs, remove them, and then insert the divs back in
        *       randomly.
        */
 
@@ -208,7 +203,7 @@
         while (projects.length) {
           var numRow = Math.floor(i++/3);
           var randomProjIndex = Math.floor(Math.random()*projects.length);
-          $(rows[numRow]).append($(projects[randomProjIndex]));
+          $(rows[numRow]).append($(projects[randomProjIndex]).clone());
           projects.splice(randomProjIndex, 1);
         }
 

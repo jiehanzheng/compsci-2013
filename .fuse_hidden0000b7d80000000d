@@ -195,11 +195,17 @@
       $('#project_list .col').remove();
 
       var i = 0;
-      while (projects.length) {
+      while (projects.length {
+        if ( i>= 20 ) break;
+
+        console.log(i);
+        console.log(projects);
+        console.log();
+
         var numRow = Math.floor(i++/3);
         var randomProjIndex = Math.floor(Math.random()*projects.length);
         $(rows[numRow]).append($(projects[randomProjIndex]).clone());
-        projects.splice(randomProjIndex, 1);
+        delete projects[randomProjIndex];
       }
     </script>
   </body>

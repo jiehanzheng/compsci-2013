@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CompSci 2012&ndash;2013 | Peddie School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+    <style>
+      body {
+        margin-top: 20px;
+        margin-bottom: 60px;
+      }
+
+      #mr_corica {
+        margin-right: 12px;
+      }
+
+      #mr_corica img {
+        width: 160px;
+      }
+
+      @media (max-width: 767px) {
+        #project_list .col {
+          margin-top: 20px;
+        }
+
+        #project_list {
+          margin-top: -20px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        #project_list .row:not(:first-of-type) {
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>CompSci 2012&ndash;2013</h1>
+        <p>The Peddie School</p>
+      </div>
+
+
+      <div class="page-header">
+        <h2>Welcome!</h2>
+      </div>
+
+      <div id="mr_corica" class="pull-left hidden-sm">
+        <div class="thumbnail">
+          <img src="images/mr_corica.jpeg" alt="">
+          <div class="caption">
+            Mr. Corica
+          </div>
+        </div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et sapien vitae enim mollis egestas vel non mauris. Aliquam eget dui odio, id adipiscing ipsum. Proin sodales, lectus nec auctor fringilla, tortor magna molestie risus, at cursus tortor turpis tristique nunc. Sed dictum felis vel arcu mattis tempus. Phasellus accumsan, nibh ut interdum porttitor, elit mauris iaculis velit, nec tincidunt purus dui ultrices purus. Ut sollicitudin, sapien at rutrum feugiat, mi est placerat metus, et tempus urna eros eget nunc. Duis sem elit, convallis sed ullamcorper quis, molestie eu nibh.
+      </p>
+      <div class="clearfix"></div>
+
+
+      <div class="page-header">
+        <h2>Student projects</h2>
+      </div>
+
+      <div id="project_list">
+        <!-- NOTE: you must have the correct number of div.row's.  My JavaScript 
+                   code will not insert new rows!  --Jiehan -->
+
+        <!-- the divs.col's below are in order of submission time.  They will be
+             shuffled while the page is rendered. -->
+        <div class="row">
+          <div id="brabeeba" class="col col-lg-4">
+            <div class="thumbnail">
+              <img src="code/brabeeba/screenshot.jpg" alt="Fighting Game">
+              <div class="caption">
+                <h3>Fighting Game</h3>
+                <p>Mien Wang &rsquo;14</p>
+                <p><span class="label label-danger">Description is grammatically wrong</span></p>
+                <p>An fighting game framework which allows you easily to implement new character.</p>
+                <p><a href="#" class="btn btn-primary">Run</a> <a class="btn btn-default">Download code</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div id="james" class="col col-lg-4">
+            <div class="thumbnail">
+              <img src="https://lorempixel.com/500/300/cats/" alt="">
+              <div class="caption">
+                <h3>Mario</h3>
+                <p>James Kolano &rsquo;13</p>
+                <p>This is a small mini game that is based upon Mario, in which the goal is to jump around and gather coins and do fun stuff.</p>
+                <p><a href="#" class="btn btn-primary">Run</a> <a class="btn btn-default">Read code</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div id="jackson" class="col col-lg-4">
+            <div class="thumbnail">
+              <img src="https://lorempixel.com/500/300/cats/" alt="">
+              <div class="caption">
+                <h3>Arcade Game</h3>
+                <p>Chuanzhe Meng &rsquo;15</p>
+                <p>This is an arcade game&mdash;control the spaceship and get rid of the bricks.</p>
+                <p><a href="#" class="btn btn-primary">Run</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col col-lg-4">
+            <div class="thumbnail">
+              <img src="https://lorempixel.com/500/300/cats/" alt="">
+              <div class="caption">
+                <h3>Project name</h3>
+                <p>Firstname Lastname &rsquo;14</p>
+                <p><span class="label label-success">Mobile-friendly</span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><a href="#" class="btn btn-primary">Run</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-lg-4">
+            <div class="thumbnail">
+              <img src="https://lorempixel.com/500/300/cats/" alt="">
+              <div class="caption">
+                <h3>Project name</h3>
+                <p>Firstname Lastname &rsquo;14</p>
+                <p><span class="label label-success">Mobile-friendly</span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><a href="#" class="btn btn-primary">Run</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-lg-4">
+            <div class="thumbnail">
+              <img src="https://lorempixel.com/500/300/cats/" alt="">
+              <div class="caption">
+                <h3>Project name</h3>
+                <p>Firstname Lastname &rsquo;14</p>
+                <p><span class="label label-success">Mobile-friendly</span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><a href="#" class="btn btn-primary">Run</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col col-lg-4">
+            <div class="thumbnail">
+              <img src="https://lorempixel.com/500/300/cats/" alt="">
+              <div class="caption">
+                <h3>Project name</h3>
+                <p>Firstname Lastname &rsquo;14</p>
+                <p><span class="label label-success">Mobile-friendly</span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><a href="#" class="btn btn-primary">Run</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-lg-4">
+            <div class="thumbnail">
+              <img src="https://lorempixel.com/500/300/cats/" alt="">
+              <div class="caption">
+                <h3>Project name</h3>
+                <p>Firstname Lastname &rsquo;14</p>
+                <p><span class="label label-success">Mobile-friendly</span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><a href="#" class="btn btn-primary">Run</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="page-header">
+        <h2>Class picture</h2>
+      </div>
+
+      <div class="thumbnail">
+        <img src="https://lorempixel.com/1170/300/abstract/" alt="">
+      </div>
+    </div>
+
+    <script src="vendor/bootstrap/js/jquery.js"></script>
+    <script>
+      /**
+       * Task: read project divs, remove them, and then insert the divs back in
+       *       randomly.
+       */
+
+      $(document).ready(function() {
+        var rows = $('#project_list .row');
+        var projects = $('#project_list .row .col').toArray();
+
+        $('#project_list .col').remove();
+
+        var i = 0;
+        while (projects.length) {
+          var numRow = Math.floor(i++/3);
+          var randomProjIndex = Math.floor(Math.random()*projects.length);
+          $(rows[numRow]).append($(projects[randomProjIndex]));
+          projects.splice(randomProjIndex, 1);
+        }
+
+        $('#project_list').prevAll('div.page-header:first').children('h2').append(" <small>in random order!</small>");
+      });
+    </script>
+  </body>
+</html>

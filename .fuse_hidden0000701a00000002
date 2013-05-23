@@ -105,15 +105,12 @@
 
           <div id="jackson" class="col col-lg-4">
             <div class="thumbnail">
-              <img src="code/jackson/screenshot.png" alt="Legendary Bato">
+              <img src="https://lorempixel.com/500/300/cats/" alt="">
               <div class="caption">
                 <h3>Arcade Game</h3>
                 <p>Chuanzhe Meng &rsquo;15</p>
                 <p>This is an arcade game&mdash;control the spaceship and get rid of the bricks.</p>
-                <p>
-                  <a href="code/jackson/web-export/index.html" class="btn btn-primary" target="_blank">Run</a>
-                  <a href="code/jackson.zip" class="btn btn-default" target="_blank">Download code</a>
-                </p>
+                <p><a href="#" class="btn btn-primary" target="_blank">Run</a></p>
               </div>
             </div>
           </div>

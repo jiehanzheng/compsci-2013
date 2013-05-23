@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CompSci 2012&ndash;2013 | Peddie School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+    <style>
+      body {
+        margin-top: 20px;
+        margin-bottom: 60px;
+      }
+
+      #mr_corica {
+        margin-right: 12px;
+      }
+
+      #mr_corica img {
+        width: 160px;
+      }
+
+      @media (max-width: 767px) {
+        #project_list .col {
+          margin-top: 20px;
+        }
+
+        #project_list {
+          margin-top: -20px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        #project_list .row:not(:first-of-type) {
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>CompSci 2012&ndash;2013</h1>
+        <p>The Peddie School</p>
+      </div>
+
+
+      <div class="page-header">
+        <h2>Welcome!</h2>
+      </div>
+
+      <div id="mr_corica" class="pull-left hidden-sm">
+        <div class="thumbnail">
+          <img src="images/mr_corica.jpeg" alt="Mr. Corica at Stanford">
+          <div class="caption">
+            Mr. Corica
+          </div>
+        </div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et sapien vitae enim mollis egestas vel non mauris. Aliquam eget dui odio, id adipiscing ipsum. Proin sodales, lectus nec auctor fringilla, tortor magna molestie risus, at cursus tortor turpis tristique nunc. Sed dictum felis vel arcu mattis tempus. Phasellus accumsan, nibh ut interdum porttitor, elit mauris iaculis velit, nec tincidunt purus dui ultrices purus. Ut sollicitudin, sapien at rutrum feugiat, mi est placerat metus, et tempus urna eros eget nunc. Duis sem elit, convallis sed ullamcorper quis, molestie eu nibh.
+      </p>
+      <div class="clearfix"></div>
+
+
+      <div class="page-header">
+        <h2>Student projects</h2>
+      </div>
+
+      <div id="project_list">
+        <!-- NOTE: you must have the correct number of div.row's.  My JavaScript 
+                   code will not insert new rows!  --Jiehan -->
+
+        <!-- the divs.col's below are in order of submission time.  They will be
+             shuffled while the page is rendered. -->
+        <div class="row">
+          <div id="brabeeba" class="col col-lg-4">
+            <div class="thumbnail">
+              <img src="code/brabeeba/screenshot.jpg" alt="Fighting Game">
+              <div class="caption">
+                <h3>Fighting Game</h3>
+                <p>Mien Wang &rsquo;14</p>
+                <p>An fighting game framework which allows you easily to implement new character.</p>
+                <p>
+                  <a href="code/brabeeba/web-export/index.html" class="btn btn-primary" target="_blank">Run</a>
+                  <a href="code/brabeeba.zip" class="btn btn-default" target="_blank">Download code</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="james" class="col col-lg-4">
+            <div class="thumbnail">
+              <img src="https://lorempixel.com/500/300/cats/" alt="">
+              <div class="caption">
+                <h3>Mario</h3>
+                <p>James Kolano &rsquo;13</p>
+                <p>This is a small mini game that is based upon Mario, in which the goal is to jump around and gather coins and do fun stuff.</p>
+                <p>
+                  <a href="code/james/web-export/index.html" class="btn btn-primary" target="_blank">Run</a>
+                  <a href="code/james.zip" class="btn btn-default" target="_blank">Download code</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="jackson" class="col col-lg-4">
+            <div class="thumbnail">
+              <img src="code/jackson/screenshot.png" alt="Legendary Bato">
+              <div class="caption">
+                <h3>Arcade Game</h3>
+                <p>Chuanzhe Meng &rsquo;15</p>
+                <p>This is an arcade game&mdash;control the spaceship and get rid of the bricks.</p>
+                <p>
+                  <a href="code/jackson/web-export/index.html" class="btn btn-primary" target="_blank">Run</a>
+                  <a href="code/jackson.zip" class="btn btn-default" target="_blank">Download code</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="andy" class="row">
+          <div class="col col-lg-4">
+            <div class="thumbnail">
+              <img src="code/andy/screenshot.png" alt="Legendary Bato">
+              <div class="caption">
+                <h3>Legendary Bato</h3>
+                <p>Jung Yang &rsquo;13</p>
+                <p>It was a great battle, although there were many casualties, in the end it was well worth it.  --Tommy X</p>
+                <p>
+                  <a href="code/andy/web-export/index.html" class="btn btn-primary" target="_blank">Run</a>
+                  <a href="code/andy.zip" class="btn btn-default" target="_blank">Download code</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="conor" class="col col-lg-4">
+            <div class="thumbnail">
+              <img src="code/conor/screenshot.png" alt="Physics Simulator">
+              <div class="caption">
+                <h3>Physics Simulator</h3>
+                <p>Conor Maley &rsquo;13</p>
+                <p>My program is a physically accurate physics simulator with regards to momentum, gravity, restitution, and friction.</p>
+                <p>
+                  <a href="code/conor/web-export/index.html" class="btn btn-primary" target="_blank">Run</a>
+                  <a href="code/conor.zip" class="btn btn-default" target="_blank">Download code</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-lg-4">
+            <div class="thumbnail">
+              <img src="https://lorempixel.com/500/300/cats/" alt="">
+              <div class="caption">
+                <h3>Project name</h3>
+                <p>Firstname Lastname &rsquo;14</p>
+                <p><span class="label label-success">Mobile-friendly</span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><a href="#" class="btn btn-primary" target="_blank">Run</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col col-lg-4">
+            <div class="thumbnail">
+              <img src="https://lorempixel.com/500/300/cats/" alt="">
+              <div class="caption">
+                <h3>Project name</h3>
+                <p>Firstname Lastname &rsquo;14</p>
+                <p><span class="label label-success">Mobile-friendly</span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><a href="#" class="btn btn-primary" target="_blank">Run</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-lg-4">
+            <div class="thumbnail">
+              <img src="https://lorempixel.com/500/300/cats/" alt="">
+              <div class="caption">
+                <h3>Project name</h3>
+                <p>Firstname Lastname &rsquo;14</p>
+                <p><span class="label label-success">Mobile-friendly</span></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><a href="#" class="btn btn-primary" target="_blank">Run</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="page-header">
+        <h2>Class picture</h2>
+      </div>
+
+      <div id="class_picture" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li data-target="#class_picture" data-slide-to="1" class="active"></li>
+          <li data-target="#class_picture" data-slide-to="2"></li>
+          <li data-target="#class_picture" data-slide-to="3"></li>
+          <li data-target="#class_picture" data-slide-to="4"></li>
+          <li data-target="#class_picture" data-slide-to="5"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="images/class-1.JPG" alt="">
+          </div>
+          <div class="item">
+            <img src="images/class-2.JPG" alt="">
+          </div>
+          <div class="item">
+            <img src="images/class-3.JPG" alt="">
+          </div>
+          <div class="item">
+            <img src="images/class-4.JPG" alt="">
+          </div>
+          <div class="item">
+            <img src="images/class-5.JPG" alt="">
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#class_picture" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#class_picture" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+
+      <p>
+        <strong>Left to right:</strong> Zachary Rothberg &rsquo;13, Jiehan Zheng &rsquo;14, Mien Wang <mwang-14@peddie.org>, Jung Yang <jyang-13@peddie.org>, Theodore Park <tpark-13@peddie.org>, Conor Maley <cmaley-13@peddie.org>, Tim Corica <tcorica@peddie.org>, Chuanzhe Meng <cmeng-15@peddie.org>, James Kolano <jkolano-13@peddie.org>
+      </p>
+    </div>
+
+    <script src="vendor/bootstrap/js/jquery.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script>
+      /**
+       * Task: read project divs, remove them, and then insert the divs back in
+       *       randomly.
+       */
+
+      $(document).ready(function() {
+        var rows = $('#project_list .row');
+        var projects = $('#project_list .row .col').toArray();
+
+        $('#project_list .col').remove();
+
+        var i = 0;
+        while (projects.length) {
+          var numRow = Math.floor(i++/3);
+          var randomProjIndex = Math.floor(Math.random()*projects.length);
+          $(rows[numRow]).append($(projects[randomProjIndex]));
+          projects.splice(randomProjIndex, 1);
+        }
+
+        $('#project_list').prevAll('div.page-header:first').children('h2').append(" <small>in random order!</small>");
+      });
+    </script>
+  </body>
+</html>

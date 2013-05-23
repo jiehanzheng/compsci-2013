@@ -57,7 +57,7 @@
           </div>
         </div>
       </div>
-      <p id="welcome">
+      <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et sapien vitae enim mollis egestas vel non mauris. Aliquam eget dui odio, id adipiscing ipsum. Proin sodales, lectus nec auctor fringilla, tortor magna molestie risus, at cursus tortor turpis tristique nunc. Sed dictum felis vel arcu mattis tempus. Phasellus accumsan, nibh ut interdum porttitor, elit mauris iaculis velit, nec tincidunt purus dui ultrices purus. Ut sollicitudin, sapien at rutrum feugiat, mi est placerat metus, et tempus urna eros eget nunc. Duis sem elit, convallis sed ullamcorper quis, molestie eu nibh.
       </p>
       <div class="clearfix"></div>
@@ -193,20 +193,6 @@
               </div>
             </div>
           </div>
-
-          <div id="jiehan" class="col col-lg-4">
-            <div class="thumbnail">
-              <img src="code/jiehan/screenshot.png" alt="This page">
-              <div class="caption">
-                <h3>This Index Page</h3>
-                <p>Jiehan Zheng &rsquo;14</p>
-                <p>Jiehan is honored to make this index page for the class.</p>
-                <p>
-                  <a href="#" class="btn btn-primary" target="_blank">View this page again</a>
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       
@@ -217,11 +203,11 @@
 
       <div id="class_picture" class="carousel slide">
         <ol class="carousel-indicators">
-          <li data-target="#class_picture" data-slide-to="0" class="active"></li>
-          <li data-target="#class_picture" data-slide-to="1"></li>
+          <li data-target="#class_picture" data-slide-to="1" class="active"></li>
           <li data-target="#class_picture" data-slide-to="2"></li>
           <li data-target="#class_picture" data-slide-to="3"></li>
           <li data-target="#class_picture" data-slide-to="4"></li>
+          <li data-target="#class_picture" data-slide-to="5"></li>
         </ol>
 
         <div class="carousel-inner">

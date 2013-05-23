@@ -94,7 +94,7 @@ void setup()
   mariojumpspeed=10;
   coins=0;
   mariofirehat=0;
-  frameRate(10000);
+  frameRate(100);
   size(1350,736);
   marioyspeed=0;
   koopalist[0]=new koopa(200,400,300,400,70,2,0,0);
@@ -170,7 +170,7 @@ void draw()
   background(135,206,250);
   marioimmune();
   situation=0;
-  direction();
+  getdirection();
   if(mariodead<0)
   {
     mariodead=0;
@@ -215,7 +215,7 @@ void draw()
   updateblocks();
   updategoombas();
   updatefireballs();
-  situation();
+  getsituation();
   scores();
   updatenumbers();
   if(mariodead>0)
@@ -2607,7 +2607,7 @@ void teleport()
     yscreenspeed = bb-dd + 50;
   }
   situation=0;
-  direction();
+  getdirection();
   drawmario();
   ground=0;
   checkplatforms();
@@ -2620,7 +2620,7 @@ void teleport()
   updatefireballs();
 }
 
-void situation()
+void getsituation()
 {
   if(situation==0)
   {
@@ -2666,7 +2666,7 @@ void situation()
   }
 }
 
-void direction()
+void getdirection()
 {
   if(marioyspeed<=0)
   {

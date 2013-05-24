@@ -273,9 +273,10 @@ class platform
     }
     else if(situation ==40)
     {
-      if(platformtype % 10 == 2 && teleportvariable == platformtype/10)
+//      println("teleportvariable: "+teleportvariable);
+      if(platformtype % 10 == 2 && teleportvariable == (int)(platformtype/10))
       {}
-      if(platformtype % 10 == 3&& teleportvariable == platformtype/10)
+      if(platformtype % 10 == 3&& teleportvariable == (int)(platformtype/10))
       {
         cc = (xstart+xend)/2;
         dd = yend;
@@ -283,9 +284,9 @@ class platform
     }
     else if(situation ==60 )
     {
-      if(platformtype % 10 == 5&& teleportvariable == platformtype/10)
+      if(platformtype % 10 == 5&& teleportvariable == (int)(platformtype/10))
       {}
-      if(platformtype % 10 == 4&& teleportvariable == platformtype/10)
+      if(platformtype % 10 == 4&& teleportvariable == (int)(platformtype/10))
       {
         cc = (xstart+xend)/2;
         dd = yend;
@@ -333,7 +334,7 @@ class platform
         }
         if (platformtype % 10 == 4 && (mariox+mariosize*.4)<xend&&(mariox-mariosize*.4)>xstart)
         { 
-          if ((marioy-mariosize*.38)<ystart && (marioy-mariosize*.38)>yend && teleportvariable == platformtype/10)
+          if ((marioy-mariosize*.38)<ystart && (marioy-mariosize*.38)>yend && teleportvariable == (int)(platformtype/10))
           {
             situation = 5;
           }
@@ -345,7 +346,7 @@ class platform
             situation=6;
             aa =(xstart+xend)/2;
             bb = yend;
-            teleportvariable = platformtype/10;
+            teleportvariable = (int) (platformtype/10);
           }
           else if ((marioy+mariosize*.38)<ystart && (marioy+mariosize*.38)>yend)
           {
@@ -357,7 +358,7 @@ class platform
           if(abs((marioy-mariosize*.38)-yend)<mariosize*.2)
           {
             situation=4;
-            teleportvariable = platformtype/10;
+            teleportvariable = (int) (platformtype/10);
             aa = (xstart+xend)/2;
             bb = yend; 
           }
@@ -427,6 +428,8 @@ class block
       ypos=ypos+yscreenspeed;
       strokeWeight(1);
       stroke(0,0,0);
+      if(abs(xpos-mariox)<700&&abs(ypos-marioy)<400)
+      {
       if(invis==0)
       {
         if(breaks==0)
@@ -445,6 +448,7 @@ class block
           line(xpos,ypos+50/3,xpos+50,ypos+50/3);
           line(xpos,ypos+100/3,xpos+50,ypos+100/3);
         }
+      }
       }
       if(mariodead>0)
       {
@@ -744,6 +748,8 @@ class goomba
       }
       fill(255,255,255);
       stroke(139,69,19);
+      if(abs(mariox-goombax)<700&&abs(marioy-goombay)<400)
+      {
       ellipse(goombax,goombay-goombasize*.25,goombasize*.5,goombasize*.3);
       fill(139,69,19);
       ellipse(goombax-goombasize*.25,goombay-goombasize*.15,goombasize*.4,goombasize*.3);
@@ -769,6 +775,7 @@ class goomba
       strokeWeight(3);
       line(goombax,goombay-goombasize*.8,goombax-goombasize*.25,goombay-goombasize*1.0);
       line(goombax,goombay-goombasize*.8,goombax+goombasize*.25,goombay-goombasize*1.0);
+      }
       if(mariodead>0)
       {
         if(abs(marioy+mariosize*.38-goombay+goombasize*1.8)<mariosize*.1&&goombax+goombasize*.9-mariox>0&&mariox+goombasize*.9-goombax>0)
@@ -1111,6 +1118,8 @@ class koopa
       strokeWeight(1);
       stroke(0,0,0);
       fill(255,255,0);
+      if(abs(koopax-mariox)<700&&abs(koopay-marioy)<400)
+      {
       arc(koopax+a*.015*koopasize,koopay-1.39*koopasize,.42*koopasize,.47*koopasize,PI,2*PI);
       quad(koopax+a*.2*koopasize,koopay-.35*koopasize,koopax+a*.029*koopasize,koopay-.35*koopasize,koopax-a*.057*koopasize,koopay-.071*koopasize,koopax+a*.114*koopasize,koopay-.071*koopasize);
       quad(koopax+a*.2*koopasize,koopay-.35*koopasize,koopax+a*.371*koopasize,koopay-.35*koopasize,koopax+a*.457*koopasize,koopay-.071*koopasize,koopax+a*.289*koopasize,koopay-.071*koopasize);
@@ -1339,6 +1348,7 @@ class koopa
       line(koopax+a*.371*koopasize,koopay-.643*koopasize,koopax+a*.3*koopasize,koopay-.456*koopasize);
       line(koopax+a*.4*koopasize,koopay-.343*koopasize,koopax-a*0*koopasize,koopay-.957*koopasize);
       line(koopax-a*.286*koopasize,koopay-1.257*koopasize,koopax-a*.357*koopasize,koopay-1.214*koopasize);
+      }
       if(mariodead>0)
       {
         if(abs(marioy+mariosize*.38-koopay+koopasize*2.23)<mariosize*.1&&koopax+koopasize*.9-mariox>0&&mariox+koopasize*.9-koopax>0)
@@ -1377,6 +1387,8 @@ class koopa
       stroke(0,0,0);
       strokeWeight(1);
       fill(238,220,130);
+      if(abs(koopax-mariox)<700&&abs(koopay-marioy)<400)
+      {
       arc(koopax,koopay-koopasize*.25,koopasize*.7,koopasize*.5,0,PI);
       fill(0,0,0);
       ellipse(koopax-.17*koopasize,koopay-.15*koopasize,.15*koopasize,.15*koopasize);
@@ -1419,6 +1431,7 @@ class koopa
       line(koopax+.12*koopasize,koopay-.37*koopasize,koopax+.23*koopasize,koopay-.25*koopasize);
       line(koopax+.12*koopasize,koopay-.37*koopasize,koopax+.23*koopasize,koopay-.5*koopasize);
       line(koopax-.12*koopasize,koopay-.37*koopasize,koopax-.23*koopasize,koopay-.5*koopasize);
+      }
       if(mariodead>0)
       {
         if(dead==2)
@@ -1602,6 +1615,8 @@ class flower
         mariorecentlysmall=1;
       }
     }
+    if(abs(flowerx-mariox)<700&&abs(flowery-marioy)<400)
+    {
     stroke(45,219,20);
     strokeWeight(15*flowersize);
     line(flowerx,flowery-200*flowersize,flowerx,flowery);
@@ -1614,8 +1629,11 @@ class flower
     arc(flowerx+50*flowersize,flowery-110*flowersize,100*flowersize,40*flowersize, -3, 0);
     fill(255,13,41);
     stroke(255,13,41);
+    }
     if(flowertype == 0)
     {
+      if(abs(flowerx-mariox)<700&&abs(flowery-marioy)<400)
+      {
       arc(flowerx,flowery-250*flowersize,160*flowersize,160*flowersize, -0.4 - s, 3.5+s);
       //dots
       fill(255,255,255);
@@ -1649,6 +1667,8 @@ class flower
       triangle(29*flowersize, -24*flowersize, 43*flowersize, -35*flowersize, 24*flowersize, -52*flowersize);
       triangle(43*flowersize, -36*flowersize, 57*flowersize, -47*flowersize, 38*flowersize, -64*flowersize);
       popMatrix();
+      }
+      
       //end of teeth
     }
     //venusfiretrap
@@ -1693,6 +1713,8 @@ class flower
           fireballlist[fireballs-1]= new fireball(flowerx,flowery-220*flowersize,2,bulletspeed*cos(1.57-flowerfacing),-bulletspeed*sin(1.57-flowerfacing),1,fireballs-1);
         }
       }
+      if(abs(flowerx-mariox)<700&&abs(flowery-marioy)<400)
+      {
       pushMatrix();
       translate(flowerx,flowery-220*flowersize);
       rotate(flowerfacing);
@@ -1725,6 +1747,7 @@ class flower
       triangle(29*flowersize, -24*flowersize, 43*flowersize, -35*flowersize, 24*flowersize, -52*flowersize);
       triangle(43*flowersize, -36*flowersize, 57*flowersize, -47*flowersize, 38*flowersize, -64*flowersize);
       popMatrix();
+      }
       //end of teeth
     }
     }
@@ -1899,6 +1922,8 @@ class special
       specialx=specialx+xscreenspeed+specialspeed*movecancel;
       specialyspeed=specialyspeed+specialyacc;
       specialy=specialy+yscreenspeed+specialyspeed;
+      if(abs(specialx-mariox)<700&&abs(specialy-marioy)<400)
+      {
       if(specialtype==0)
       {
         noStroke();
@@ -1946,6 +1971,7 @@ class special
         fill(50,50,50);
         quad(specialx-.029*specialsize,specialy-.095*specialsize,specialx+.029*specialsize,specialy-.095*specialsize,specialx+.029*specialsize,specialy-.4*specialsize,specialx-.029*specialsize,specialy-.4*specialsize);
       } 
+      }
   }
 }  
 

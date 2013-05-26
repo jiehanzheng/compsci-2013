@@ -69,7 +69,7 @@ public void draw()
         score += 10;
         launch = false;
         ball.get(n).changekeepgoing(launch);
-        ball.get(n).changeY(1000);
+        ball.get(n).changeY(1500);
         squares.remove(0);
         squares.add(new Squares((int)random(480), 700));
       }
@@ -77,7 +77,7 @@ public void draw()
   A.levelUp();
   A.showScore();
   A.lifeCheck();
-  A.life();
+  A.showLife();
   A.extraBonus();
 }
 

@@ -42,7 +42,7 @@ class spaceShip
       dySquare = 3;
   }
 
-  void life()
+  void showLife()
   {
     for (int i = life; i > 0; i--)
     {

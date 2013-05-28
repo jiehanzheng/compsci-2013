@@ -1,3 +1,5 @@
+/* @pjs globalKeyEvents="true"; */
+
 /*
 TODO:
  

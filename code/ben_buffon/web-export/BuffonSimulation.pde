@@ -1,3 +1,5 @@
+/* @pjs globalKeyEvents="true"; */
+
 int numLines = 6;
 int lineSpacing = 40;
 int vertMargin = 20;

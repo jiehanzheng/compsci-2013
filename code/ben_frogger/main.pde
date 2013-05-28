@@ -1,3 +1,5 @@
+/* @pjs globalKeyEvents="true"; */
+
 void setup()
 {
   background (0, 255, 0);

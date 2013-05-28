@@ -1,3 +1,5 @@
+/* @pjs globalKeyEvents="true"; */
+
 /*
 James Kolano's Paint Program
 Redesigned code by Mr. Corica

@@ -1,3 +1,5 @@
+/* @pjs globalKeyEvents="true"; */
+
 PImage [] imglist;
 ArrayList <Item> myList = new ArrayList <Item> ();
 int stickdirection;

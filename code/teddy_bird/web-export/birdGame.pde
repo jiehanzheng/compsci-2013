@@ -1,3 +1,5 @@
+/* @pjs globalKeyEvents="true"; */
+
 //TODO:
 // Programming: make it so that there are less bugs and more hawks the more bugs you eat/fix animations
 // Art: Background

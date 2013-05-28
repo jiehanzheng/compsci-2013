@@ -1,3 +1,5 @@
+/* @pjs globalKeyEvents="true"; */
+
 int timer;
 int delay=65;
 int stonescore;

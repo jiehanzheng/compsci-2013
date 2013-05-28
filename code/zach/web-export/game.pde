@@ -1,3 +1,5 @@
+/* @pjs globalKeyEvents="true"; */
+
 //int[] weapons = new int[100];
 Class sword = Sword.class;
 Class axe = Axe.class;

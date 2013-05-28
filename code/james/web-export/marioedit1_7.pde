@@ -1,3 +1,5 @@
+/* @pjs globalKeyEvents="true"; */
+
 float xscreenspeed;
 float yscreenspeed;
 float mariox=675;

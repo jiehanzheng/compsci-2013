@@ -1,3 +1,5 @@
+/* @pjs globalKeyEvents="true"; */
+
 //----------------------------------------
 int p1AbsoluteBlood=1000;
 int p1RecoverableBlood=1000;

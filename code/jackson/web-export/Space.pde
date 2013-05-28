@@ -1,3 +1,5 @@
+/* @pjs globalKeyEvents="true"; */
+
 int haloSpot =0;
 boolean hit = false;
 boolean launch = false;
